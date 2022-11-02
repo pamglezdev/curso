@@ -1,6 +1,5 @@
 version: '3.9'
 services:
-
   postgresql:
     image: postgres:10.21
     environment:
@@ -9,7 +8,6 @@ services:
       - 5432:5432
     networks:
       - depot
-
 
   pgadmin4:
     image: dpage/pgadmin4
@@ -22,4 +20,4 @@ services:
       - depot
 
 networks:
-  depot:  
+  depot:
